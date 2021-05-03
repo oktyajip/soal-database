@@ -1,0 +1,21 @@
+1. Silahkan lakukan import database berikut ini dengan nama database (nama_anda) :
+2. Silahkan tampilkan data dari setiap table
+	- menampilkan data dari table districts : SELECT * FROM districts;
+	- menampilkan data dari table provinces : SELECT * FROM provinces;
+	- menampilkan data dari table regencies : SELECT * FROM regencies;
+	- menampilkan data dari table villages : SELECT * FROM villages;
+3. Silahkan ganti nama tabel “provinces” menjadi “provinsi”
+	> ALTER TABLE provinces RENAME TO provinsi;
+4. Silahkan ganti nama tabel “regencies” menjadi “kabupaten_kota”
+	> ALTER TABLE regencies RENAME TO kabupaten_kota;
+5. Silahkan ganti nama table “districts” menjadi “kecamatan”
+	> ALTER TABLE districts RENAME TO kecamatan;
+6. Silahkan ganti nama table “villages” menjadi “desa”
+	> ALTER TABLE villages RENAME TO desa;
+7. Seleksi data sehingga akan menampilkan hasil format tabel seperti berikut :
+	> SELECT district_id, name FROM desa WHERE district_id = 1101010;
+8. Seleksi data sehingga akan menampilkan hasil format tabel seperti berikut :
+	> SELECT regency_id, name FROM kecamatan WHERE regency_id = 1101;
+9. Seleksi data sehingga akan menampilkan hasil format tabel seperti berikut :
+	> SELECT id, name FROM kabupaten_kota WHERE id = 1101;
+10. Silahkan export database lalu diberi nama “nama_anda.sql”
